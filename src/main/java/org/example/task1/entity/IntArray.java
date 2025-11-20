@@ -1,13 +1,13 @@
 package org.example.task1.entity;
 
-import java.io.Serializable;
+import java.util.Arrays;
 
-public class IntArray implements Serializable {
+public class IntArray {
 
   private int[] array;
 
-  public IntArray(int length) {
-    array = new int[length];
+  public IntArray(int[] array) {
+    this.array = array.clone();
   }
 
   public int getElement(int index) {
@@ -20,5 +20,20 @@ public class IntArray implements Serializable {
 
   public void setElement(int index, int value) {
     array[index] = value;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+
+    IntArray array1 = (IntArray) o;
+    return Arrays.equals(array, array1.array);
+  }
+
+  @Override
+  public int hashCode() {
+    return Arrays.hashCode(array);
   }
 }
