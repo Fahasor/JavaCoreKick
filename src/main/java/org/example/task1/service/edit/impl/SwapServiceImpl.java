@@ -1,9 +1,9 @@
-package org.example.task1.service.util.edit.impl;
+package org.example.task1.service.edit.impl;
 
 import org.example.task1.entity.IntArray;
-import org.example.task1.service.util.edit.EditService;
+import org.example.task1.service.edit.SwapService;
 
-public class EditServiceImpl implements EditService {
+public class SwapServiceImpl implements SwapService {
 
   @Override
   public void swap(IntArray array, int indexA, int indexB) {

@@ -1,9 +1,9 @@
-package org.example.task1.service.util.extremum.impl;
+package org.example.task1.service.minmax.impl;
 
 import org.example.task1.entity.IntArray;
-import org.example.task1.service.util.extremum.ExtremumService;
+import org.example.task1.service.minmax.MinMaxService;
 
-public class ExtremumServiceImpl implements ExtremumService {
+public class MinMaxServiceImpl implements MinMaxService {
 
   @Override
   public int findIndexOfMin(IntArray array, int leftBorder, int rightBorder) {

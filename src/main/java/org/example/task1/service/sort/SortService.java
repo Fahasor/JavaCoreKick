@@ -1,4 +1,4 @@
-package org.example.task1.service.util.sort;
+package org.example.task1.service.sort;
 
 import org.example.task1.entity.IntArray;
 

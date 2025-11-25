@@ -36,4 +36,12 @@ public class IntArray {
   public int hashCode() {
     return Arrays.hashCode(array);
   }
+
+  @Override
+  public String toString() {
+    final StringBuilder sb = new StringBuilder("IntArray{");
+    sb.append("array=").append(Arrays.toString(array));
+    sb.append('}');
+    return sb.toString();
+  }
 }

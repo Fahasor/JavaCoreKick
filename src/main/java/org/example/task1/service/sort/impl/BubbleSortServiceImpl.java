@@ -1,12 +1,12 @@
-package org.example.task1.service.util.sort.impl;
+package org.example.task1.service.sort.impl;
 
 import org.example.task1.entity.IntArray;
-import org.example.task1.service.util.edit.EditService;
-import org.example.task1.service.util.edit.impl.EditServiceImpl;
-import org.example.task1.service.util.sort.SortService;
+import org.example.task1.service.edit.SwapService;
+import org.example.task1.service.edit.impl.SwapServiceImpl;
+import org.example.task1.service.sort.SortService;
 
 public class BubbleSortServiceImpl implements SortService {
-  EditService editService = new EditServiceImpl();
+  SwapService editService = new SwapServiceImpl();
 
   @Override
   public void sort(IntArray array) {
