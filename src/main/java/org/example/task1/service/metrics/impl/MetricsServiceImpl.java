@@ -1,9 +1,9 @@
-package org.example.task1.service.minmax.impl;
+package org.example.task1.service.metrics.impl;
 
 import org.example.task1.entity.IntArray;
-import org.example.task1.service.minmax.MinMaxService;
+import org.example.task1.service.metrics.MetricsService;
 
-public class MinMaxServiceImpl implements MinMaxService {
+public class MetricsServiceImpl implements MetricsService {
 
   @Override
   public int findIndexOfMin(IntArray array, int leftBorder, int rightBorder) {
@@ -23,5 +23,16 @@ public class MinMaxServiceImpl implements MinMaxService {
       max = Integer.max(max, element);
     }
     return max;
+  }
+
+  @Override
+  public int sum(IntArray array) {
+    int sum = 0;
+
+    for (int i = 0; i < array.getLength(); i++) {
+      sum += array.getElement(i);
+    }
+
+    return sum;
   }
 }
